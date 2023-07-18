@@ -11,4 +11,4 @@ function head(assertEqual) {
 
 assertEqual(head([5,5,5]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-
+assertEqual(head([    ,5,5]), );

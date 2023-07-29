@@ -15,6 +15,7 @@ function without(source, itemsToRemove) {
   return filteredArray;
 }
 
+//test code
 
 const result1 = without([1, 2, 3], [1]);
 assertArraysEqual(result1, [2, 3]); // Output: Arrays are equal: [2, 3] [2, 3]
@@ -24,12 +25,12 @@ const result2 = without(["1", "2", "3"], [1, 2, "3"]);
 assertArraysEqual(result2, ["1", "2"]); // Output: Arrays are equal: ["1", "2"] ["1", "2"]
 
 
-const result4 = without([], []);
-assertArraysEqual(result4, []); // Output: Arrays are equal: [] []
+const result3 = without([], []);
+assertArraysEqual(result3, []); // Output: Arrays are equal: [] []
 
 
-const result5 = without([1, 2, 2, 3, 4, 2], [2, 3]);
-assertArraysEqual(result5, [1, 4]); // Output: Arrays are equal: [1, 4] [1, 4]
+const result4 = without([1, 2, 2, 3, 4, 2], [2, 3]);
+assertArraysEqual(result4, [1, 4]); // Output: Arrays are equal: [1, 4] [1, 4]
 
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]);

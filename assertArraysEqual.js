@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertArraysEqual = function (actual, expected) {
   if (actual === expected) {
     ;
     console.log("✅✅✅Assertion Passed = ", actual, "=", expected);
@@ -19,8 +19,8 @@ function eqArrays(arr1, arr2) {
   return true; // If all elements match, return true
 }
 
-assertEqual(eqArrays([1, 2, 3, 4], [1, 2, 3]), false); // => should not pass
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => should not PASS
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => should PASS
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // => should not PASS
+assertArraysEqual(eqArrays([1, 2, 3, 4], [1, 2, 3]), false); // => should not pass
+assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+assertArraysEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => should not PASS
+assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => should PASS
+assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // => should not PASS

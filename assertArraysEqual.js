@@ -1,9 +1,9 @@
-function assertArraysEqual(actual, expected) {
-  const isEqual = eqArrays(actual, expected);
+function assertArraysEqual(arr1, arr2) {
+  const isEqual = eqArrays(arr1, arr2);
   if (isEqual) {
-    console.log("✅✅✅ Assertion Passed:", actual, "=", expected);
+    console.log("✅✅✅ Assertion Passed:", arr1, "=", arr2);
   } else {
-    console.log("❌❌❌ Assertion Failed:", actual, "!=", expected);
+    console.log("❌❌❌ Assertion Failed:", arr1, "!=", arr2);
   }
 }
 function eqArrays(arr1, arr2) {
@@ -20,16 +20,8 @@ function eqArrays(arr1, arr2) {
 
 // test code
 
-assertArraysEqual(eqArrays([1, 2, 3, 4], [1, 2, 3]), false); // => should not pass
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertArraysEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => should not PASS
-assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => should PASS
-assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => should not PASS
-
-/* check w/ monitor why
-✅✅✅ Assertion Passed: false = false
-✅✅✅ Assertion Passed: true = true
-✅✅✅ Assertion Passed: false = false
-✅✅✅ Assertion Passed: true = true
-✅✅✅ Assertion Passed: false = false
-*/
+assertArraysEqual([1, 2, 3, 4], [1, 2, 3]);// => should not pass
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should PASS
+assertArraysEqual([1, 2, 3], [3, 2, 1]); // => should not PASS
+assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => should PASS
+assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => should not PASS

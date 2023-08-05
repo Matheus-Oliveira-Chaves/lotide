@@ -1,14 +1,13 @@
-const assertEqual = function (actual, expected) {
- 
-};
-function head(assertEqual) {
-  if (assertEqual && assertEqual.length > 0) {
-    console.log( assertEqual[0]);
-    return
-  }
-  console.log( undefined);
-}
+const assertEqual = require('./assertEqual');
 
-assertEqual(head([5,5,5]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head([    ,5,5]), );
+const head = function(array) {
+  // Check if the array is not empty
+  if (array.length > 0) {
+    // Return the first element of the array
+    return array[0];
+  }
+  // If the array is empty, return undefined
+  return undefined;
+};
+
+module.exports = head

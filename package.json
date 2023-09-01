@@ -2,7 +2,7 @@
   "name": "@matheus.chaves/lotide",
   "version": "1.0.1",
   "description": "lotide",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },

@@ -19,4 +19,4 @@ function countLetters(sentence) {
     return letterCount; // Return the object containing letter counts
   }
   
- 
+ module.exports = countLetters

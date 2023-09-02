@@ -6,9 +6,7 @@ function countLetters(sentence) {
   
   // Loop through each character in the sentence
   for (const letter of sentence) {
-   
-      
-      // If the letter already exists in the letterCount object, increment its count
+             // If the letter already exists in the letterCount object, increment its count
       if (letterCount[letter]) {
         letterCount[letter]++;
       } else {

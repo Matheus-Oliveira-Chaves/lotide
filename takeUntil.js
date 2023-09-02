@@ -1,5 +1,3 @@
-const eqArrays = require('./eqArrays') 
-const assertArraysEqual = require('./assertArraysEqual')
 
 const takeUntil = function(array, callback) {
   // Initialize an empty array to store the elements

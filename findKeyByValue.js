@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual')
+
 
 const findKeyByValue = function (object, value) {
   // Get an array of keys from the object

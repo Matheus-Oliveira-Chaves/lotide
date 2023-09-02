@@ -1,4 +1,5 @@
 const eqArrays = require('./eqArrays')
+const eqObjects = require('./eqObjects')
 
 const assertObjectsEqual = function (actual, expected) {
   const inspect = require('util').inspect; // Importing the inspect function from the util library
